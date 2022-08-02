@@ -40,6 +40,13 @@ class SinglyLinkedList {
     }
     return current;
   }
+  shift() {
+    if (!this.head) return undefined;
+    let oldHead = this.head;
+    this.head = oldHead.next;
+    this.length--;
+    return oldHead;
+  }
 }
 
 const list = new SinglyLinkedList();
