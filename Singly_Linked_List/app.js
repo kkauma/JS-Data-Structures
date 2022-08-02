@@ -45,6 +45,9 @@ class SinglyLinkedList {
     let oldHead = this.head;
     this.head = oldHead.next;
     this.length--;
+    if (this.length === 0) {
+      this.tail = null;
+    }
     return oldHead;
   }
 }
@@ -58,7 +61,5 @@ list.push("vercel");
 console.log(list);
 list.pop();
 console.log(list);
-list.pop();
-list.pop();
-list.pop();
+list.shift();
 console.log(list);
