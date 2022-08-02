@@ -70,7 +70,7 @@ class SinglyLinkedList {
       current = current.next;
       counter++;
     }
-    return counter;
+    return current;
   }
 }
 
@@ -80,8 +80,4 @@ list.push("hello");
 // console.log(list);
 list.push("world");
 list.push("vercel");
-console.log(list);
-list.pop();
-console.log(list);
-list.shift();
-console.log(list);
+console.log(list.get(2));
