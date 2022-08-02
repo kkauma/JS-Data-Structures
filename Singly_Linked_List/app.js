@@ -12,14 +12,22 @@ class SinglyLinkedList {
     this.length = 0;
   }
   push(val) {
-    const node = new Node(val);
-    if (this.length === 0) {
-      this.head = node;
-      this.tail = node;
+    const newNode = new Node(val);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
     } else {
-      this.tail.next = node;
-      this.tail = node;
+      this.tail.next = newNode;
+      this.tail = newNode;
     }
     this.length++;
+    return this;
   }
 }
+
+const list = new SinglyLinkedList();
+console.log(list);
+list.push("hi");
+console.log(list);
+list.push("you");
+console.log(list);
