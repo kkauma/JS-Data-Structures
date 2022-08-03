@@ -34,6 +34,7 @@ class DoublyLinkedList {
     } else {
       this.tail = currentTail.prev;
       this.tail.next = null;
+      currentTail.prev = null;
     }
     this.length--;
     return currentTail;
@@ -44,4 +45,6 @@ list = new DoublyLinkedList();
 list.push(7);
 list.push(99);
 list.push(12);
+console.log(list);
+list.pop();
 console.log(list);
