@@ -72,12 +72,21 @@ class SinglyLinkedList {
     }
     return current;
   }
+  set(idx, value) {
+    const setNode = this.get(idx);
+    if (setNode) {
+      setNode.val = value;
+      return true;
+    }
+    return false;
+  }
 }
 
 const list = new SinglyLinkedList();
 // console.log(list);
 list.push("hello");
-// console.log(list);
 list.push("world");
 list.push("vercel");
 console.log(list.get(2));
+list.set(2, "ZEIT");
+console.log(list);
