@@ -93,6 +93,18 @@ class SinglyLinkedList {
     this.length++;
     return true;
   }
+  remove(idx) {
+    if (idx < 0 || idx > this.length) return undefined;
+    if (idx === this.length - 1) return this.pop();
+    if (idx === 0) return this.shift();
+
+    let previousNode = this.get(idx - 1);
+    let removedNode = this.get(idx);
+    let nextNode = this.get(idx + 1);
+    previousNode.next = nextNode;
+    this.length--;
+    return removedNode;
+  }
 }
 
 const list = new SinglyLinkedList();
@@ -100,5 +112,5 @@ list.push("hello");
 list.push("world");
 list.push("vercel");
 console.log(list);
-list.insert(2, "react");
+list.remove(1);
 console.log(list);
