@@ -26,3 +26,9 @@ class DoublyLinkedList {
     return this;
   }
 }
+
+list = new DoublyLinkedList();
+list.push(7);
+list.push(99);
+list.push(12);
+console.log(list);
