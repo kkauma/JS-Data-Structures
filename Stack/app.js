@@ -1,19 +1,6 @@
-// Stacks
+// Stack
 // LIFO
 
-// Stack with an array
-// const stack = [];
-// stack.push("google");
-// stack.push("stripe");
-// stack.push("youtube");
-// console.log(stack);
-// console.log(stack.pop());
-// stack.push("amazon");
-// console.log(stack);
-// console.log(stack.pop());
-// console.log(stack);
-
-// Stack (singly linked list)
 class Node {
   constructor(val) {
     this.val = val;
@@ -50,15 +37,3 @@ class Stack {
     return temp.val;
   }
 }
-
-const stack = new Stack();
-stack.push(1);
-stack.push(2);
-stack.push(3);
-stack.push(4);
-stack.push(5);
-console.log(stack);
-stack.pop();
-console.log(stack);
-stack.pop();
-console.log(stack);
