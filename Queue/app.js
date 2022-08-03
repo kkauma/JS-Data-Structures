@@ -5,13 +5,21 @@
 
 // Queue using an array
 const q = [];
-q.push("FIRST");
-q.push("SECOND");
-q.push("THIRD");
-console.log(q.shift());
-console.log(q.shift());
-console.log(q.shift());
-console.log(q.shift());
+// q.push("FIRST");
+// q.push("SECOND");
+// q.push("THIRD");
+// console.log(q.shift());
+// console.log(q.shift());
+// console.log(q.shift());
+// console.log(q.shift());
+q.unshift("FIRST");
+q.unshift("SECOND");
+q.unshift("THIRD");
+console.log(q);
+console.log(q.pop());
+console.log(q.pop());
+console.log(q.pop());
+console.log(q.pop());
 
 // Queue (singly linked list)
 // class Node {
