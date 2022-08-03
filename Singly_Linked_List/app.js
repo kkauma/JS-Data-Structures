@@ -129,11 +129,3 @@ class SinglyLinkedList {
     console.log(arr);
   }
 }
-
-const list = new SinglyLinkedList();
-list.push("hello");
-list.push("world");
-list.push("vercel");
-console.log(list.print());
-list.reverse();
-console.log(list.print());
