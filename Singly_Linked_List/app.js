@@ -1,3 +1,9 @@
+// Singly Linked list
+// Insertion: O(1)
+// Removal: Depends, O(1) or O(N)
+// Searching: O(N)
+// Access: O(N)
+
 class Node {
   constructor(val) {
     this.val = val;
