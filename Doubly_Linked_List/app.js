@@ -1,3 +1,9 @@
+// Doubly Linked List
+// Insertion: O(1)
+// Removal: O(1)
+// Searching: O(N)
+// Access: O(N)
+
 class Node {
   constructor(val) {
     this.val = val;
@@ -125,14 +131,3 @@ class DoublyLinkedList {
     return removedNode;
   }
 }
-
-list = new DoublyLinkedList();
-list.push(7);
-list.push(99);
-list.push(12);
-list.push(300);
-list.push(400);
-list.push(700);
-list.push(972);
-// console.log(list);
-list.get(5);
