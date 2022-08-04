@@ -1,4 +1,6 @@
 // Binary Search Tree
+// Insertion O(log N)
+// Searching O(log N)
 
 class Node {
   constructor(val) {
