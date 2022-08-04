@@ -2,24 +2,8 @@
 // FIFO
 // Insertion: O(1)
 // Removal: O(1)
-
-// Queue using an array
-// const q = [];
-// q.push("FIRST");
-// q.push("SECOND");
-// q.push("THIRD");
-// console.log(q.shift());
-// console.log(q.shift());
-// console.log(q.shift());
-// console.log(q.shift());
-// q.unshift("FIRST");
-// q.unshift("SECOND");
-// q.unshift("THIRD");
-// console.log(q);
-// console.log(q.pop());
-// console.log(q.pop());
-// console.log(q.pop());
-// console.log(q.pop());
+// Searching: O(N)
+// Access: O(N)
 
 // Queue (singly linked list)
 class Node {
